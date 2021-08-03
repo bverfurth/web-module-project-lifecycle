@@ -38,17 +38,17 @@ class App extends React.Component {
   // Return
   render() {
     return (
+      // {/* Using App.css styling for page*/}
       <div className="App-header">
         <h1> {this.state.userCards.name} </h1>
         <img src={this.state.userCards.avatar_url} alt="Profile Picture" />
         <div>
-          <h2></h2>
-          <h4>{this.state.userCards.bio}</h4>
+          <h5>{this.state.userCards.bio}</h5>
         </div>
 
         {/* Follwers Section Under Image */}
 
-        <h3>Follower Count: {this.state.userCards.followers}</h3>
+        <h4>Follower Count: {this.state.userCards.followers}</h4>
         <h4>Followers:</h4>
 
         {/* Added MAP function to get list of followers */}
@@ -60,7 +60,17 @@ class App extends React.Component {
         {/* Information from my profile page */}
         <h4>Following: {this.state.userCards.following}</h4>
         <h4>Public Repos: {this.state.userCards.public_repos}</h4>
-        <h4>Git Repo: {this.state.userCards.html_url}</h4>
+        <h4>Git Repo:</h4>
+        <button
+          type="button"
+          onClick={(e) => {
+            e.preventDefault();
+            window.location.href = "https://github.com/bverfurth";
+          }}
+        >
+          Click Here!
+        </button>
+        <h3>{this.state.userCards.html_url}</h3>
       </div>
     );
   }
