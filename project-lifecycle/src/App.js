@@ -39,10 +39,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App-header">
-        <h1> My GitHub </h1>
+        <h1> {this.state.userCards.name} </h1>
         <img src={this.state.userCards.avatar_url} alt="Profile Picture" />
         <div>
-          <h2>{this.state.userCards.name}</h2>
+          <h2></h2>
           <h4>{this.state.userCards.bio}</h4>
         </div>
 
@@ -50,6 +50,17 @@ class App extends React.Component {
 
         <h3>Follower Count: {this.state.userCards.followers}</h3>
         <h4>Followers:</h4>
+
+        {/* Added MAP function to get list of followers */}
+
+        {this.state.followers.map((follower, i) => {
+          return <h5 key={i}>{follower.login} </h5>;
+        })}
+
+        {/* Information from my profile page */}
+        <h4>Following: {this.state.userCards.following}</h4>
+        <h4>Public Repos: {this.state.userCards.public_repos}</h4>
+        <h4>Git Repo: {this.state.userCards.html_url}</h4>
       </div>
     );
   }
