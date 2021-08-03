@@ -37,7 +37,16 @@ class App extends React.Component {
 
   // Return
   render() {
-    return <div className="App-header"></div>;
+    return (
+      <div className="App-header">
+        <h1> My GitHub </h1>
+        <img src={this.state.userCards.avatar_url} alt="Profile Picture" />
+        <div>
+          <h2>{this.state.userCards.name}</h2>
+          <h4>{this.state.userCards.bio}</h4>
+        </div>
+      </div>
+    );
   }
 }
 
