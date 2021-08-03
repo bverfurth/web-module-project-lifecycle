@@ -45,6 +45,11 @@ class App extends React.Component {
           <h2>{this.state.userCards.name}</h2>
           <h4>{this.state.userCards.bio}</h4>
         </div>
+
+        {/* Follwers Section Under Image */}
+
+        <h3>Follower Count: {this.state.userCards.followers}</h3>
+        <h4>Followers:</h4>
       </div>
     );
   }
