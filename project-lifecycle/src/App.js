@@ -37,9 +37,7 @@ class App extends React.Component {
 
   // Return
   render() {
-    return (
-      
-    )
+    return <div className="App-header"></div>;
   }
 }
 
