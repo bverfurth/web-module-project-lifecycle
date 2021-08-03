@@ -43,13 +43,13 @@ class App extends React.Component {
         <h1> {this.state.userCards.name} </h1>
         <img src={this.state.userCards.avatar_url} alt="Profile Picture" />
         <div>
-          <h5>{this.state.userCards.bio}</h5>
+          <h4>{this.state.userCards.bio}</h4>
         </div>
 
         {/* Follwers Section Under Image */}
 
-        <h4>Follower Count: {this.state.userCards.followers}</h4>
-        <h4>Followers:</h4>
+        <h3>Follower Count: {this.state.userCards.followers}</h3>
+        <h3>Followers:</h3>
 
         {/* Added MAP function to get list of followers */}
 
@@ -58,9 +58,9 @@ class App extends React.Component {
         })}
 
         {/* Information from my profile page */}
-        <h4>Following: {this.state.userCards.following}</h4>
-        <h4>Public Repos: {this.state.userCards.public_repos}</h4>
-        <h4>My Page</h4>
+        <h3>Following: {this.state.userCards.following}</h3>
+        <h3>Public Repos: {this.state.userCards.public_repos}</h3>
+        <h3>My Page</h3>
         <button
           type="button"
           onClick={(e) => {

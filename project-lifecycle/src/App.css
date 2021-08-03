@@ -21,22 +21,41 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 img {
   border-radius: 2rem;
 }
 
+h1 {
+  background-color: #4edbd4;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+h3 {
+  background-color: #4edbd4;
+  border: 2px solid black;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+}
 h4 {
   align-content: center;
   text-align: center;
-  text-decoration: underline;
+  background-color: #4edbd4;
+  border: 2px solid black;
+  border-radius: 1.5rem;
 }
 
 h5 {
   padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: auto;
+  background-color: #f5f8f5;
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
 }
 
 button {
@@ -49,7 +68,7 @@ button {
   outline: none;
   color: rgb(0, 0, 0);
   background-color: #f5f8f5;
-  border: none;
+  border: 2px solid black;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
@@ -59,7 +78,7 @@ button:hover {
 }
 
 button:active {
-  background-color: #3e8e41;
+  background-color: #f5f8f5;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
