@@ -60,7 +60,7 @@ class App extends React.Component {
         {/* Information from my profile page */}
         <h4>Following: {this.state.userCards.following}</h4>
         <h4>Public Repos: {this.state.userCards.public_repos}</h4>
-        <h4>Git Repo:</h4>
+        <h4>My Page</h4>
         <button
           type="button"
           onClick={(e) => {
